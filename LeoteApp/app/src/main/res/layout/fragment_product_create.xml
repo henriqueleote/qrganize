@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#e1e4e6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:drawablePadding="5dp"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/novecentosanswide_normal"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/back"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/nameLayout">
+
+        <TextView
+            android:id="@+id/boxName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/novecentosanswide_demibold"
+            android:textColor="#000000"
+            android:textSize="23sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/NomeArtigo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edt_bg_selector"
+            android:drawableLeft="@drawable/ic_title_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/novecentosanswide_normal"
+            android:hint="@string/product_name"
+            android:textSize="15sp"
+            android:maxLength="12"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/TipoArtigo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/NomeArtigo"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_bg_selector"
+            android:drawableLeft="@drawable/ic_description_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/novecentosanswide_normal"
+            android:hint="@string/product_type"
+            android:textSize="15sp"
+            android:maxLength="12"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/QuantidadeArtigo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/TipoArtigo"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_bg_selector"
+            android:drawableLeft="@drawable/ic_looks_one_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/novecentosanswide_normal"
+            android:hint="@string/product_quantity"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:maxLength="12"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/CorArtigo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/QuantidadeArtigo"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_bg_selector"
+            android:drawableLeft="@drawable/ic_color_lens_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/novecentosanswide_normal"
+            android:hint="@string/product_color"
+            android:textSize="15sp"
+            android:maxLength="12"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/DescricaoArtigo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/CorArtigo"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edt_bg_selector"
+            android:drawableLeft="@drawable/ic_list_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/novecentosanswide_normal"
+            android:hint="@string/product_description"
+            android:textSize="15sp"
+            android:maxLength="50"
+            android:inputType="text|textMultiLine"
+            android:maxLines="3" />
+
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/DescricaoArtigo"
+            android:fontFamily="@font/novecentosanswide_normal"
+            android:text="@string/product_picture"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/ImagemArtigo"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/TextView1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_image_black_24dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="16dp"
+            android:focusable="true"
+            android:src="@drawable/ic_check_black_24dp"
+            android:visibility="visible"
+            app:backgroundTint="#ffffff"
+            app:pressedTranslationZ="12dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

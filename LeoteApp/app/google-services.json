@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "361344807645",
+    "firebase_url": "https://leoteapp.firebaseio.com",
+    "project_id": "leoteapp",
+    "storage_bucket": "leoteapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361344807645:android:793a73f62a710f62",
+        "android_client_info": {
+          "package_name": "com.leote.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361344807645-bmcbs2nocscsspmdml496n9e1kv0tl5s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leote.app",
+            "certificate_hash": "f5f9b4b6bfa5db1908c83bae214397a90856b40f"
+          }
+        },
+        {
+          "client_id": "361344807645-ivdc1qkhi93c0hfqqi5upotuso173a41.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leote.app",
+            "certificate_hash": "d6b0d7aee475e8697add61d716de7ed4d8aaf571"
+          }
+        },
+        {
+          "client_id": "361344807645-j309jg6mnv9oglfi4kevma703pju40aa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.leote.app",
+            "certificate_hash": "716eb43a9409f532903ba0a1d8ab135ea3e1fab8"
+          }
+        },
+        {
+          "client_id": "361344807645-h79jm6871cqtm0qq0u5vhpqkh5sunkkk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF63yWREf3HBdokNglmgrozQF9Ef4utE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361344807645-h79jm6871cqtm0qq0u5vhpqkh5sunkkk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

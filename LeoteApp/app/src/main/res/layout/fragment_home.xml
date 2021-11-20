@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swiperefresh_items"
+    android:orientation="vertical"
+    android:background="#e1e4e6"
+    tools:context=".MainActivity">
+
+
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:lines="1"
+        android:text="@string/my_boxes"
+        android:textAlignment="center"
+        android:fontFamily="@font/novecentosanswide_demibold"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myRecycler"
+        android:layout_below="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/invisible_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:text="@string/create_box_begin"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <include layout="@layout/content_main" />
+
+</RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

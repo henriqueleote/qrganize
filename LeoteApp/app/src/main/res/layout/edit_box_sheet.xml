@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/register_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_close_black_24dp" />
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/novecentosanswide_demibold"
+        android:text="@string/edit_box"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/editBoxName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tt"
+        android:background="@drawable/edt_bg_selector"
+        android:drawableLeft="@drawable/ic_title_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="#000000"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:hint="@string/box_name"
+        android:textSize="15sp"
+        android:maxLength="12"
+        android:inputType="text"
+        android:maxLines="1"/>
+
+    <EditText
+        android:id="@+id/editBoxTipo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editBoxName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_bg_selector"
+        android:drawableLeft="@drawable/ic_description_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="#000000"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:hint="@string/box_type"
+        android:textSize="15sp"
+        android:maxLength="12"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/editBoxLocal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editBoxTipo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_bg_selector"
+        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="#000000"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:hint="@string/box_local"
+        android:textSize="15sp"
+        android:maxLength="12"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editBoxLocal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_background"
+        android:fontFamily="@font/novecentosanswide_demibold"
+        android:text="@string/edit"
+        android:textColor="#FFFFFF" />
+
+
+</RelativeLayout>

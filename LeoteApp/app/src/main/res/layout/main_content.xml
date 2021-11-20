@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_start">
+
+    <TextView
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/novecentosanswide_demibold"
+        android:text="@string/start_adventure"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/black_qr" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_button_outline"
+        android:fontFamily="@font/novecentosanswide_demibold"
+        android:text="@string/register" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="530dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button_background"
+        android:fontFamily="@font/novecentosanswide_demibold"
+        android:text="@string/login"
+        android:textColor="#FFFFFF" />
+
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:gravity="end"
+        android:text="@string/forgot_password"
+        android:textColor="#000000" />
+
+</RelativeLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swiperefresh_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e4e6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:drawablePadding="5dp"
+                android:drawableTint="#000000"
+                android:fontFamily="@font/novecentosanswide_normal"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/back"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/ic_menu_black_24dp"
+                android:drawablePadding="5dp"
+                android:drawableTint="#000000"
+                android:fontFamily="@font/novecentosanswide_normal"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/options"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/nameLayout">
+
+            <TextView
+                android:id="@+id/boxName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/novecentosanswide_demibold"
+                android:textColor="#000000"
+                android:textSize="23sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/layout"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/boxName">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/qrImage"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/boxLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="#000000"
+                android:fontFamily="@font/novecentosanswide_normal"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/layout"
+                app:layout_constraintTop_toTopOf="@+id/layout" />
+
+            <TextView
+                android:id="@+id/boxTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="29dp"
+                android:drawableLeft="@drawable/ic_description_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="#000000"
+                android:fontFamily="@font/novecentosanswide_normal"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/layout"
+                app:layout_constraintTop_toBottomOf="@+id/boxLocal" />
+
+            <TextView
+                android:id="@+id/productNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:drawableLeft="@drawable/ic_looks_one_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="#000000"
+                android:fontFamily="@font/novecentosanswide_normal"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/layout"
+                app:layout_constraintStart_toEndOf="@+id/layout" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_layout">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="#acadad" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/myRecyclerProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/invisible_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/novecentosanswide_normal"
+                android:text="Crie um produto para começar"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="16dp"
+            android:focusable="true"
+            android:src="@drawable/fab_add"
+            android:visibility="visible"
+            app:backgroundTint="#ffffff"
+            app:pressedTranslationZ="12dp" />
+
+    </RelativeLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

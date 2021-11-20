@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_close_black_24dp" />
+
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/novecentosanswide_demibold"
+        android:text="@string/change_email"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edt_bg_selector"
+        android:drawableLeft="@drawable/ic_key_black_24dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        android:maxLines="1"/>
+
+    <CheckBox
+        android:id="@+id/toggBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:text="@string/show_password"
+        android:textColor="#000000" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/toggBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#acadad" />
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edt_bg_selector"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:hint="@string/new_email"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_background"
+        android:fontFamily="@font/novecentosanswide_demibold"
+        android:text="@string/change"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

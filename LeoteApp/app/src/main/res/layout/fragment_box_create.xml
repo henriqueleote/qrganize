@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e4e6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:drawablePadding="5dp"
+            android:drawableTint="#000000"
+            android:fontFamily="@font/novecentosanswide_normal"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/back"
+            android:textColor="#000000" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:text="@string/create_your_box"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameLayout" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/black_qr"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qr" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edt_bg_selector"
+        android:drawableLeft="@drawable/ic_title_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="#000000"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:hint="@string/box_name"
+        android:textSize="15sp"
+        android:maxLength="12"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+
+    <EditText
+        android:id="@+id/tipo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edt_bg_selector"
+        android:drawableLeft="@drawable/ic_description_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="#000000"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:hint="@string/box_type"
+        android:textSize="15sp"
+        android:maxLength="12"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+    <EditText
+        android:id="@+id/local"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edt_bg_selector"
+        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+        android:drawablePadding="10dp"
+        android:drawableTint="#000000"
+        android:fontFamily="@font/novecentosanswide_normal"
+        android:hint="@string/box_local"
+        android:textSize="15sp"
+        android:maxLength="12"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipo" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="16dp"
+        android:focusable="true"
+        android:src="@drawable/ic_check_black_24dp"
+        android:visibility="visible"
+        app:backgroundTint="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:pressedTranslationZ="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

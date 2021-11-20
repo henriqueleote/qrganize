@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/edit_profile"
+        android:title="@string/edit_profile"/>
+    <item android:id="@+id/change_email"
+        android:title="@string/change_email"/>
+    <item android:id="@+id/change_password"
+        android:title="@string/change_password"/>
+    <item android:id="@+id/delete_account"
+        android:title="@string/delete_account"/>
+    <item android:id="@+id/logout"
+        android:title="@string/logout"/>
+    <item android:id="@+id/about"
+        android:title="@string/about_app"/>
+</menu>
