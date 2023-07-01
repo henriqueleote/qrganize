@@ -11,3 +11,6 @@ Qualifico esta aplicação como uma ferramenta muito prática e dinâmica, permi
 
 ## Estado
 Aplicação de projeto final do Ensino Secundário, atualmente removida da Google Store devido a desatualizações.
+
+![Example]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/henriqueleote/qrganize/blob/main/Apresenta%C3%A7%C3%A3o/Mockups/Mockup3.png)https://github.com/henriqueleote/qrganize/blob/main/Apresenta%C3%A7%C3%A3o/Mockups/Mockup3.png)
+
